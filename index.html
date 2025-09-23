@@ -43,7 +43,7 @@
     <!-- HERO SECTION -->
 
     <section
-      class="relative min-h-screen bg-gradient-to-br from-[hsl(210,24%,16%)] to-[hsl(210,24%,10%)] text-white overflow-hidden"
+      class="relative min-h-screen bg-gradient-to-br from-[hsl(210,24%,16%)] to-[hsl(210,24%,10%)] text-white overflow-x-hidden"
     >
       <!-- {/* Background Image with Overlay */} -->
       <div class="absolute inset-0">
@@ -73,8 +73,15 @@
           <a href="#about" class="hover:text-accent transition-colors"
             >About Us</a
           >
-          <a href="#maket" class="hover:text-accent transition-colors"
-            >Market</a
+          <a
+            href="#testimonials"
+            class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
+            >Contact</a
           >
           <button
             variant="outline"
@@ -126,11 +133,11 @@
       <!-- Mobile overlay + slide-in menu -->
       <div
         id="mobile-overlay"
-        class="fixed inset-0 z-20 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
+        class="absolute inset-0 z-20 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
       ></div>
       <aside
         id="mobile-menu"
-        class="fixed inset-0 z-30 w-full h-full translate-x-full transition-transform duration-300 md:hidden bg-[#112641]/95 backdrop-blur border-l border-white/10 p-6 overflow-y-auto"
+        class="absolute inset-0 z-30 w-full h-full translate-x-full transition-transform duration-300 md:hidden bg-[#112641]/95 backdrop-blur border-l border-white/10 p-6 overflow-y-auto"
         aria-hidden="true"
       >
         <div class="flex items-center justify-between mb-8">
@@ -158,19 +165,9 @@
         </div>
         <nav class="space-y-4">
           <a
-            href="#home"
-            class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
-            >Home</a
-          >
-          <a
             href="#features"
             class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
             >Features</a
-          >
-          <a
-            href="#portfolio"
-            class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
-            >Portfolio</a
           >
           <a
             href="#about"
@@ -183,17 +180,12 @@
             >Testimonials</a
           >
           <a
-            href="#pricing"
-            class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
-            >Pricing</a
-          >
-          <a
             href="#contact"
             class="block px-3 py-2 text-white hover:text-[#CEB467] transition-colors"
             >Contact</a
           >
           <button
-            class="w-full mt-4 border border-[#CEB467] text-[#CEB467] hover:bg-[#CEB467] hover:text-black px-3 py-2 rounded-md transition-colors"
+            class="w-full mt-4 border border-[#CEB467] bg-[#CEB467] text-black hover:bg-transparent hover:text-[#CEB467] px-3 py-2 rounded-md transition-colors"
           >
             Sign In
           </button>
@@ -334,7 +326,7 @@
     </section>
 
     <!-- TradingView Widget BEGIN -->
-    <div class="bg-[#112641]">
+    <div class="bg-[#112641] overflow-x-hidden">
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script
@@ -395,7 +387,7 @@
     <!-- TradingView Widget END -->
 
     <!-- FEATURES SECTION - WHY CHOOSE US -->
-    <section id="features" class="pt-32 pb-24 md:py-32">
+    <section id="features" class="pt-32 pb-24 md:py-32 overflow-x-hidden">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="text-center mb-16">
           <div
@@ -608,7 +600,7 @@
 
     <!-- LIVE MARKET WIDGET TRADING VIEW -->
 
-    <section class="">
+    <section class="overflow-x-hidden">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="text-center mb-12" data-aos="fade-up">
           <h2 class="text-4xl font-bold mb-4">Live Market Data</h2>
@@ -637,7 +629,7 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="py-20 bg-trading-light">
+    <section class="py-20 bg-trading-light overflow-x-hidden">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="text-center mb-16" data-aos="fade-up">
           <div
@@ -856,7 +848,7 @@
     </section>
 
     <!-- BUILD YOUR PORTFOLIO -->
-    <section class="py-20 relative bg-[#112641] text-white">
+    <section class="py-20 relative bg-[#112641] text-white overflow-x-hidden">
       <div class="absolute top-20 right-32">
         <div class="animate-pulse delay-500">★</div>
       </div>
@@ -936,7 +928,7 @@
     </section>
 
     <!-- TRUST SECTION / TESTIMONIALS -->
-    <section id="about" class="py-20 bg-background">
+    <section id="about" class="py-20 bg-background overflow-x-hidden">
       <div class="container mx-auto px-6 lg:px-12">
         <!-- Header -->
         <div class="text-center mb-16">
@@ -1287,7 +1279,7 @@
 
     <!-- CTA SECTION -->
 
-    <section class="py-20 bg-[#112641] text-white relative overflow-hidden">
+    <section class="py-20 bg-[#112641] text-white relative overflow-hidden overflow-x-hidden">
       <!-- Background Pattern -->
       <div class="absolute inset-0 opacity-10">
         <div
@@ -1513,7 +1505,7 @@
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="bg-[#112641] border-t border-white/10 py-16">
+    <footer class="bg-[#112641] border-t border-white/10 py-16 overflow-x-hidden">
       <div class="container mx-auto px-6 lg:px-12">
         <!-- Footer Grid -->
         <div
@@ -1620,7 +1612,7 @@
         </div>
 
         <!-- Bottom Bar -->
-        <div class="pt-8 border-t border-white/10" data-aos="fade-up">
+        <div class="pt-8 border-t border-white/10">
           <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-gray-400 text-sm md:mb-0">
               © 2024 EquityVault. All rights reserved.
